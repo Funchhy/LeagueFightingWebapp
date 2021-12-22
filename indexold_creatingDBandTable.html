@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Champion Comparison LvL 1</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Register Champions into DB</h1>
+          </div>
+          <div class="panel-body">
+            <form action="connect.php" method="post">
+              
+              <label for="champName">Champion Name:</label>
+              <input type="text" id="champName" name="champName"><br><br>
+              <label for="healthpoints">Health Points:</label>
+              <input type="text" id="healthpoints" name="healthpoints"><br><br>
+              <label for="adamage">Attack Damage:</label>
+              <input type="text" id="adamage" name="adamage"><br><br>
+              <label for="aspeed">Attack Speed:</label>
+              <input type="text" id="aspeed" name="aspeed"><br><br>
+              <label for="armor">Armor Value:</label>
+              <input type="text" id="armor" name="armor"><br><br>
+
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+          <form action="createDb.php" method="post">
+            <label for="dbName">Database Name:</label>
+            <input type="text" id="dbName" name="dbName"><br><br>
+            <input type="submit" value="Create Database!">
+          </form>
+          <form action="createTable.php" method="post">
+            <label for="dbName">Database Name:</label>
+            <input type="text" id="dbName" name="dbName"><br><br>
+            <label for="tableName">Table Name:</label>
+            <input type="text" id="tableName" name="tableName"><br><br>
+            <input type="submit" value="Create Table!">
+          </form>
+
+          <form action="fight.html">
+            <input type="submit" value="Go to Fight Page!" />
+        </form>
+        
+          <div class="panel-footer text-right">
+            <small>&copy; Funchy Punchy</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
